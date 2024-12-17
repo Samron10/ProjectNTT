@@ -10,13 +10,13 @@ jobs:
         with:
             fetch-depth: 0
       - name: SonarCloud Scan
-        uses: sonarsource/sonarcloud-github-action@4
+        uses: sonarsource/sonarcloud-github-action@4.5
         env:
             GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-              -Dsonar.organization=samron1o
+              -Dsonar.organization=samron10
               -Dsonar.projectKey=Samron10_ProjectNTT
               
               
